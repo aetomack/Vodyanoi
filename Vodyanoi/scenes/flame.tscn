@@ -1,0 +1,50 @@
+[gd_scene load_steps=10 format=3 uid="uid://cao3l5wrrjakn"]
+
+[ext_resource type="Texture2D" uid="uid://cex5g68ijfplo" path="res://assets/vfx/flame/flame_glow_0.png" id="1_1ovwi"]
+[ext_resource type="Texture2D" uid="uid://bx1waurb70t3d" path="res://assets/vfx/flame/flame_glow_1.png" id="2_elt3w"]
+[ext_resource type="Texture2D" uid="uid://dqyyvnjok4wfx" path="res://assets/vfx/flame/flame_glow_2.png" id="3_cwf2v"]
+[ext_resource type="Texture2D" uid="uid://dmkxsvwm2ila6" path="res://assets/vfx/flame/flame_glow_3.png" id="4_0pl5l"]
+[ext_resource type="Texture2D" uid="uid://dtnuuc14ttjvv" path="res://assets/vfx/flame/flame_glow_4.png" id="5_uxmna"]
+[ext_resource type="Texture2D" uid="uid://cauh3ajvnn4t3" path="res://assets/vfx/flame/flame_glow_5.png" id="6_b7n10"]
+[ext_resource type="Texture2D" uid="uid://dx6wjhx8e4sae" path="res://assets/vfx/flame/flame_glow_6.png" id="7_66ppg"]
+[ext_resource type="Texture2D" uid="uid://d15nslj6704l8" path="res://assets/vfx/flame/flame_glow_7.png" id="8_bptnp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dkjag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1ovwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_elt3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cwf2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0pl5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uxmna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b7n10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_66ppg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bptnp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="flame" type="StaticBody2D"]
+z_index = 3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dkjag")
+autoplay = "default"
+frame_progress = 0.586329

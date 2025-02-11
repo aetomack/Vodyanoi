@@ -1,0 +1,65 @@
+[gd_scene load_steps=12 format=3 uid="uid://cpquwogad5vpr"]
+
+[ext_resource type="Texture2D" uid="uid://bueg7akslopah" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_0.png" id="1_5fify"]
+[ext_resource type="Texture2D" uid="uid://bcq76qcs8aurw" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_1.png" id="2_umbwu"]
+[ext_resource type="Texture2D" uid="uid://cs5bstei41se0" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_2.png" id="3_pkcw6"]
+[ext_resource type="Texture2D" uid="uid://bbysskktydniq" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_3.png" id="4_utbjo"]
+[ext_resource type="Texture2D" uid="uid://dyq6vkijm310b" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_4.png" id="5_cq8ce"]
+[ext_resource type="Texture2D" uid="uid://c3vpyrpjrs22s" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_5.png" id="6_5r8fx"]
+[ext_resource type="Texture2D" uid="uid://buvapl8sukg1a" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_6.png" id="7_ard5e"]
+[ext_resource type="Texture2D" uid="uid://i6h40k3w1ocx" path="res://assets/prop/barrel_break/E/barrel_break_E_0.0_7.png" id="8_vv80b"]
+[ext_resource type="Texture2D" uid="uid://b7kxn8uycsqfx" path="res://assets/prop/barrel/E/barrel_E_0.0_0.png" id="9_viq7u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bnge8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5fify")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_umbwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pkcw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_utbjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cq8ce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5r8fx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ard5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vv80b")
+}],
+"loop": true,
+"name": &"break",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_viq7u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lr3io"]
+radius = 7.07107
+
+[node name="Barrel" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bnge8")
+autoplay = "default"
+frame_progress = 0.539771
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_lr3io")

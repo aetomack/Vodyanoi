@@ -1,0 +1,14 @@
+CollisionShape2D
+Area2D
+CollisionPolygon2D
+Node
+Sprite2D
+AnimatedSprite2D
+StaticBody2D
+TileMapLayer
+EnhancedMovement
+Timer
+CharacterBody2D
+Node2D
+Marker2D
+AudioStreamPlayer2D

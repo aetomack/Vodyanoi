@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://caw643c2i2fh1"]
+
+[ext_resource type="Texture2D" uid="uid://cvyc37pwpryje" path="res://assets/prop/torch/NWW/torch_NWW_157.5_0.png" id="1_j8cvg"]
+
+[node name="Torch" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+position = Vector2(17, 43)
+texture = ExtResource("1_j8cvg")

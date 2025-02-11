@@ -1,0 +1,10 @@
+res://scenes/Player_Knight.tscn
+res://scenes/game.tscn
+res://scenes/wall_3_nw.tscn
+res://scenes/flame.tscn
+res://scenes/torch.tscn
+res://scenes/column_see.tscn
+res://scripts/player_knight.gd
+res://scenes/skeleton.tscn
+res://scripts/skeleton.gd
+res://scripts/game_variables.gd

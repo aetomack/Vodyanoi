@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://g1ewn2d3ei0u"]
+
+[ext_resource type="Texture2D" uid="uid://beenytkdv8tj2" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_0.png" id="1_snw5u"]
+[ext_resource type="Texture2D" uid="uid://be2nntokprhl1" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_1.png" id="2_lxnp4"]
+[ext_resource type="Texture2D" uid="uid://p5cgtc3nhlcu" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_2.png" id="3_ow8f2"]
+[ext_resource type="Texture2D" uid="uid://df5khxt43oupo" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_3.png" id="4_frdm1"]
+[ext_resource type="Texture2D" uid="uid://bikl1246wjher" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_4.png" id="5_oner3"]
+[ext_resource type="Texture2D" uid="uid://chrwogwsbdjvm" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_5.png" id="6_dteve"]
+[ext_resource type="Texture2D" uid="uid://rilkbsb310jj" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_6.png" id="7_gtlxt"]
+[ext_resource type="Texture2D" uid="uid://bp18mebbpgjkg" path="res://assets/none-playable character/subservient/subservient_special_worship/NNE/subservient_special_worship_NNE_67.5_7.png" id="8_qohpj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_15hob"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_snw5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lxnp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ow8f2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_frdm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_oner3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dteve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gtlxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qohpj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21qah"]
+radius = 5.0
+height = 10.0
+
+[node name="npc2_worship_nne" type="StaticBody2D"]
+z_index = 8
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_15hob")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_21qah")
